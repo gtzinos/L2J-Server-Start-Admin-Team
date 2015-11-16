@@ -12,7 +12,7 @@ SET GameServerPath="C:\Users\George\Desktop\l2\L2 Regenaration\gameserver\"
 REM Set your Lineage II Server Path (WITHOUT FILE NAME !!!)
 SET LineageFolderPath="C:\Program Files\Lineage II\Localhost\"
 REM SET After Login Server start Delay
-SET LoginServerDelay=5
+SET LoginServerDelay=7
 REM SET After Game Server start Delay
 SET GameServerDelay=45
  
@@ -25,7 +25,7 @@ IF EXIST %LoginServerPath% (
 	)
 	start "" startLoginServer.bat
 	ECHO Login Server started ! ! !
-	ECHO Boring ? You can press a key to continue ! ! !
+	ECHO Boring ? You can press any key to continue ! ! !
 	TIMEOUT %LoginServerDelay%
 	goto gameserver
 ) ELSE (
@@ -43,7 +43,7 @@ IF EXIST %GameServerPath% (
 	)
 	start "" startGameServer.bat
 	ECHO Game Server started ! ! !
-	ECHO Boring ? You can press a key to continue ! ! !
+	ECHO Boring ? You can press any key to continue ! ! !
 	TIMEOUT %GameServerDelay%
 	goto l2
 ) ELSE (
