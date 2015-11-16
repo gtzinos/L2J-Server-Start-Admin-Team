@@ -25,6 +25,7 @@ IF EXIST %LoginServerPath% (
 	)
 	start "" startLoginServer.bat
 	ECHO Login Server started ! ! !
+	ECHO Boring ? You can press a key to continue ! ! !
 	TIMEOUT %LoginServerDelay%
 	goto gameserver
 ) ELSE (
@@ -42,6 +43,7 @@ IF EXIST %GameServerPath% (
 	)
 	start "" startGameServer.bat
 	ECHO Game Server started ! ! !
+	ECHO Boring ? You can press a key to continue ! ! !
 	TIMEOUT %GameServerDelay%
 	goto l2
 ) ELSE (
